@@ -1,0 +1,18 @@
+{
+    "name": "ci/review",
+    "description": "The Cynoinfotech Review Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Review\\": ""
+        }
+    }
+}

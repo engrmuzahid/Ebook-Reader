@@ -1,0 +1,17 @@
+{
+    "name": "Setting",
+    "alias": "setting",
+    "description": "The Cynoinfotech Setting Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 2,
+    "providers": [
+        "Modules\\Setting\\Providers\\SettingServiceProvider",
+        "Modules\\Setting\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "helpers.php"
+    ],
+    "requires": []
+}

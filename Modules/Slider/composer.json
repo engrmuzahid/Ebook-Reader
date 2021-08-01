@@ -1,0 +1,19 @@
+{
+    "name": "ci/slider",
+    "description": "The Cynoinfotech Slider Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Slider\\": ""
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+{
+    "name": "Cynoebook",
+    "alias": "cynoebook",
+    "description": "The Cynoinfotech Cynoebook Theme.",
+    "version": "1.0.0",
+    "providers": [
+        "Themes\\Cynoebook\\Providers\\CynoebookServiceProvider",
+        "Themes\\Cynoebook\\Providers\\RouteServiceProvider"
+    ],
+    "files": [
+        "helpers.php"
+    ]
+}

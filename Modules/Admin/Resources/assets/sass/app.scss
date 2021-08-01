@@ -1,0 +1,132 @@
+@import '~bootstrap/dist/css/bootstrap';
+@import "./font-awesome";
+@import "./flaticon";
+@import "./simple-line-icons";
+@import '~nprogress/nprogress';
+@import '~select2/dist/css/select2';
+
+@import "./variables";
+@import "./outlinefocus";
+@import "./typography";
+@import "./opacity";
+
+//layouts
+@import "./layouts";
+@import "./layouts-colors";
+
+//components
+@import "./components";
+
+//plugins
+@import "./plugins";
+
+//responsive
+@import "./responsive";
+
+//Background
+@import "./background";
+
+.ci-download-box {
+    background: #f1f1f1;
+    box-shadow: 2px 6px 15px 0px rgba(33, 31, 31,0.5); 
+}
+.avatar-holder { 
+    position: relative;
+    border: 1px solid #d9d9d9;
+    background: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden !important;
+
+    > {
+        i {
+            position: absolute;
+            font-size: 24px;
+            color: #d9d9d9;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.select2-selection__rendered {
+    line-height: 38px !important;
+}
+.select2-selection--multiple .select2-selection__rendered {
+    line-height: 30px !important;
+}
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+.select2-selection__arrow {
+    height: 39px !important;
+}
+.select2-container
+{
+    width: inherit !important;
+}
+.theme-switch-block .colorinput-color.dark{
+    background-color: #1a2035;
+}
+.theme-switch-block .colorinput-color.blue{
+    background-color: #1572E8;
+}
+.theme-switch-block .colorinput-color.purple{
+    background-color: #6861CE;
+}
+.theme-switch-block .colorinput-color.light-blue{
+    background-color: #48ABF7;
+}
+.theme-switch-block .colorinput-color.green{
+    background-color: #31CE36;
+}
+.theme-switch-block .colorinput-color.orange{
+    background-color: #FFAD46;
+}
+.theme-switch-block .colorinput-color.red{
+    background-color: #F25961;
+}
+.theme-switch-block .colorinput-color.white{
+    background-color: #fff;
+}
+.theme-switch-block .colorinput-color.dark2{
+    background-color: #1f283e;
+}
+.theme-switch-block .colorinput-color.blue2{
+    background-color: #1269DB;
+}
+.theme-switch-block .colorinput-color.purple2{
+    background-color: #5C55BF;
+}
+.theme-switch-block .colorinput-color.light-blue2{
+    background-color: #3697E1;
+}
+.theme-switch-block .colorinput-color.green2{
+    background-color: #2BB930;
+}
+.theme-switch-block .colorinput-color.orange2{
+    background-color: #FF9E27;
+}
+.theme-switch-block .colorinput-color.red2{
+    background-color: #EA4d56;
+}
+
+.theme-switch-block .colorinput-color.bg1 {
+    background-color: #fafafa;
+}
+.theme-switch-block .colorinput-color.bg2 {
+    background-color: #fff;
+}
+.theme-switch-block .colorinput-color.bg3 {
+    background-color: #f1f1f1;
+}

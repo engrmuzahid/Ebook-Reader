@@ -1,0 +1,15 @@
+{
+    "name": "Translation",
+    "alias": "translation",
+    "description": "The CynoInfotech Translation Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Translation\\Providers\\TranslationServiceProvider",
+        "Modules\\Translation\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

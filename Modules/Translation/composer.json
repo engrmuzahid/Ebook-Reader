@@ -1,0 +1,19 @@
+{
+    "name": "ci/translation",
+    "description": "The CynoInfotech Translation Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "astrotomic/laravel-translatable": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Translation\\": ""
+        }
+    }
+}

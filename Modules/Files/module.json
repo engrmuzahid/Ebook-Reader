@@ -1,0 +1,17 @@
+{
+    "name": "Files",
+    "alias": "files",
+    "description": "The Cynoinfotech Files Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 10,
+    "providers": [
+        "Modules\\Files\\Providers\\FilesServiceProvider",
+        "Modules\\Files\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "helpers.php"
+    ],
+    "requires": []
+}

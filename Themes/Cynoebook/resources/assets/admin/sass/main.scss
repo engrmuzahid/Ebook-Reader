@@ -1,0 +1,126 @@
+h4.section-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form-horizontal .banner-image-wrapper .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.banner-image-wrapper .single-banner {
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.single-banner {
+    .banner-header {
+        border-bottom: 1px solid #e9e9e9;
+        background: #f6f6f7;
+        padding: 15px;
+    }
+
+    .banner-body {
+        position: relative;
+        padding: 15px;
+    }
+
+    &.slider-banner {
+        .banner-body {
+            .banner-content .checkbox {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.banner-body {
+    .banner-image {
+        position: absolute;
+        top: 28px;
+        left: 15px;
+        border: 1px solid #d2d6de;
+        border-radius: 3px;
+        height: 150px;
+        width: 150px;
+        cursor: pointer;
+        z-index: 0;
+
+        > i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 70px;
+            color: #d9d9d9;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .banner-content {
+        margin-left: 170px;
+        padding-top: 10px;
+
+        .checkbox {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-content {
+        .checkbox {
+            padding-top: 7px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-banner {
+        &.slider-banner {
+            .banner-body {
+                .banner-content .checkbox {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .single-banner {
+        &.slider-banner {
+            .banner-body {
+                .banner-content .checkbox {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .banner-body {
+        .banner-image {
+            position: relative;
+            left: auto;
+            top: auto;
+            margin: 15px auto 30px;
+            display: table;
+        }
+
+        .banner-content {
+            margin-left: 0;
+            padding-top: 0;
+        }
+    }
+}

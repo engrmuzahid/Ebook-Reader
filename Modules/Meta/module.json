@@ -1,0 +1,11 @@
+{
+    "name": "Meta",
+    "alias": "meta",
+    "description": "The Cynoinfotech Meta data management Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 110,
+    "providers": [
+        "Modules\\Meta\\Providers\\MetaServiceProvider"
+    ]
+}

@@ -1,0 +1,186 @@
+.my-account {
+	.sidebar-menu {
+		margin-top: 1px;
+
+		ul {
+			margin: 0;
+		}
+
+		li {
+            display: block;
+
+            @include themify {
+                border-bottom: 1px solid themed('gray-lite');
+            }
+
+			&:first-child {
+                @include themify {
+                    border-top: 1px solid themed('gray-lite');
+                }
+			}
+
+			a {
+				position: relative;
+				font-size: 16px;
+				font-weight: 600;
+				display: inline-block;
+				padding: 15px 0;
+				transition: 200ms ease-in-out;
+
+				@include themify {
+					color: themed('black');
+				}
+
+				&:hover {
+					@include themify {
+						color: themed('primary');
+					}
+
+					i {
+						@include themify {
+							color: themed('primary');
+						}
+					}
+				}
+
+				i {
+					margin-right: 5px;
+					transition: 200ms ease-in-out;
+
+					@include themify {
+					    color: themed('gray-dark');
+					}
+				}
+			}
+
+			&.active {
+				a {
+					@include themify {
+					    color: themed('primary');
+					}
+
+					i {
+						@include themify {
+						    color: themed('primary');
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.index-table {
+	border-radius: $radius-default;
+	padding: 10px 15px 5px;
+
+	@include themify {
+	    border: 1px solid themed('gray-lite');
+	}
+
+	> h3 {
+    	margin: 25px 0 30px;
+    }
+
+    .table-responsive {
+		th, td {
+			&:first-child {
+				padding-left: 0;
+				width: 105px;
+			}
+		}
+
+		td {
+			padding: 12px 8px;
+			vertical-align: middle;
+            
+			&:first-child .image-placeholder,
+			&:first-child .image-holder {
+				margin: 5px 0;
+			}
+
+			&:nth-child(2) {
+				a {
+					font-size: 16px;
+
+					@include themify {
+					    color: themed('black');
+					}
+
+					&:hover {
+						@include themify {
+						    color: themed('primary');
+						}
+					}
+				}
+			}
+		}
+        td.action{
+            a {
+               display: inline-block;
+            }
+        }
+	}
+
+	.table-favorite {
+		td {
+			@include themify {
+			    border-top: 1px solid themed('white-lite');
+			}
+		}
+	}
+
+	.image-placeholder {
+		border-radius: $radius-default;
+		height: 70px;
+		width: 75px;
+
+		@include themify {
+		    border: 1px solid themed('gray-lite');
+		}
+
+		> i {
+			font-size: 36px;
+		}
+	}
+
+	.image-holder {
+		height: 70px;
+		width: 75px;
+	}
+}
+
+.account-details {
+	border-radius: $radius-default;
+	margin-bottom: 20px;
+	padding: 10px 15px 5px;
+
+	@include themify {
+	    border: 1px solid themed('gray-lite');
+	}
+
+	.account {
+		margin-bottom: 15px;
+	}
+
+	h4 {
+		font-family: $font-opensans;
+		font-weight: 600;
+		margin-bottom: 15px;
+		padding-bottom: 5px;
+
+		@include themify {
+		   border-bottom: 1px solid themed('default');
+		}
+	}
+}
+
+
+@media screen and (max-width: $md) {
+	.my-account {
+		.sidebar-menu {
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+	}
+}

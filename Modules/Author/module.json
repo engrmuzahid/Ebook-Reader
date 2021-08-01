@@ -1,0 +1,12 @@
+{
+    "name": "Author",
+    "alias": "author",
+    "description": "The Cynoinfotech Author Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 70,
+    "providers": [
+        "Modules\\Author\\Providers\\AuthorServiceProvider",
+        "Modules\\Author\\Providers\\RouteServiceProvider"
+    ]
+}

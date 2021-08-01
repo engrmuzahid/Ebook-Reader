@@ -1,0 +1,49 @@
+.tab-ebooks {
+	margin-top: 50px;
+
+    .nav-tabs {
+        border-bottom: none;
+    }
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+    .tab-ebook-slider {
+        padding-bottom: 30px;
+    }
+
+    .slick-active .ebook-card {
+        &:before {
+            height: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .tab-ebooks {
+        .section-header h3 {
+            float: none !important;
+            display: table;
+            margin-bottom: 15px;
+        }
+
+        .nav-tabs {
+            float: none !important;
+            text-align: center;
+
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+
+        .tab-ebook-slider {
+            padding-bottom: 0;
+        }
+
+        .slick-dots {
+            display: none !important;
+        }
+    }
+}

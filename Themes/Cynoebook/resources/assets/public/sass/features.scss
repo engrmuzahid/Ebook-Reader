@@ -1,0 +1,54 @@
+.ad-wrapper {
+    padding: 10px 0;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.features-wrapper {
+    border-radius: $radius-default;
+    padding: 10px 0;
+
+    @include themify {
+        border: 1px solid themed('gray-lite');
+    }
+}
+
+.single-feature {
+    padding: 20px 0;
+
+    .feature-icon {
+        margin-top: 7px;
+        width: 60px;
+        text-align: center;
+
+        @include themify {
+            border-right: 1px solid themed('primary');
+        }
+
+        i {
+            font-size: 35px;
+
+            @include themify {
+                color: themed('primary');
+            }
+        }
+    }
+
+    .feature-details {
+        margin-left: 70px;
+
+        p {
+            font-size: 14px;
+
+            @include themify {
+                color: themed('gray-dark');
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .features-wrapper {
+        margin-top: 15px;
+    }
+}

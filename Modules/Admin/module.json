@@ -1,0 +1,17 @@
+{
+    "name": "Admin",
+    "alias": "admin",
+    "description": "The Cynoinfotech Admin Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "Modules\\Admin\\Providers\\RouteServiceProvider",
+        "Modules\\Admin\\Providers\\AdminServiceProvider"
+    ],
+    "aliases": {
+        "Form": "Modules\\Admin\\Ui\\Facades\\Form"
+    },
+    "files": [],
+    "requires": []
+}

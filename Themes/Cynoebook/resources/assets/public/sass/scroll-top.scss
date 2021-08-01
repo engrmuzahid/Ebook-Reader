@@ -1,0 +1,43 @@
+.scroll-top {
+    text-align: center;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    padding: 0 7px;
+    visibility: hidden;
+    transform: scale(0);
+    z-index: 999;
+    display: table;
+    transition: 0.6s;
+    border: 1px solid;
+    
+    i {
+        font-size: 35px;
+        transition: 200ms ease-in-out;
+
+        @include themify {
+            color: themed('primary');
+        }
+
+        &:hover {
+            @include themify {
+                color: themed('primary-hover');
+            }
+        }
+    }
+
+    &.active {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.theme-black .scroll-top {
+    i {
+        color: #0068e1;
+
+        &:hover {
+            color: #1a86ff;
+        }
+    }
+}

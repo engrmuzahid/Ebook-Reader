@@ -1,0 +1,12 @@
+{
+    "name": "Category",
+    "alias": "category",
+    "description": "The Cynoinfotech Category Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 70,
+    "providers": [
+        "Modules\\Category\\Providers\\CategoryServiceProvider",
+        "Modules\\Category\\Providers\\RouteServiceProvider"
+    ]
+}

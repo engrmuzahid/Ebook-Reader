@@ -1,0 +1,77 @@
+.breadcrumb {
+	background: transparent;
+	padding: 0;
+	margin: -10px 0 10px;
+
+	ul {
+		display: inline-block;
+
+		li {
+			position: relative;
+			vertical-align: middle;
+
+			&:after {
+				position: absolute;
+				content: "\f105";
+				font-family: "Fontawesome";
+				font-size: 16px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+
+				@include themify {
+				    color: themed('gray-dark');
+				}
+			}
+
+			&:first-child {
+				padding-left: 0;
+
+				a {
+					font-size: 18px;
+					transition: 200ms ease-in-out;
+
+					@include themify {
+					    color: themed('primary');
+					}
+
+					&:hover {
+						@include themify {
+						    color: themed('primary-hover');
+						}
+					}
+				}
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+
+			&.active {
+				font-size: 15px;
+
+				@include themify {
+				    color: themed('gray');
+				}
+			}
+
+			a {
+				font-size: 15px;
+				display: inline-block;
+				padding: 5px 15px 5px 5px;
+
+				@include themify {
+				    color: themed('gray-dark');
+				}
+
+				transition: 200ms ease-in-out;
+
+				&:hover {
+					@include themify {
+					    color: themed('primary');
+					}
+				}
+			}
+		}
+	}
+}

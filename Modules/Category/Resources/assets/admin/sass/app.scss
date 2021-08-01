@@ -1,0 +1,9 @@
+@import '~jstree/dist/themes/default/style';
+
+.rtl {
+    .jstree-default {
+        &.jstree-rtl .jstree-node {
+            background-position: 0% 1px;
+        }
+    }
+}

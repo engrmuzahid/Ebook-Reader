@@ -1,0 +1,12 @@
+{
+    "name": "Favorite",
+    "alias": "favorite",
+    "description": "The Cynoinfotech Favorite Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Favorite\\Providers\\FavoriteServiceProvider",
+        "Modules\\Favorite\\Providers\\RouteServiceProvider"
+    ]
+}

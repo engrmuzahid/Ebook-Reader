@@ -1,0 +1,68 @@
+.my-dashboard {
+    .table {
+        > thead > tr > th:first-child {
+            padding-left: 0;
+        }
+
+        > tbody > tr > td {
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .account-information {
+        border-radius: $radius-default;
+        padding: 15px;
+
+        @include themify {
+            border: 1px solid themed('gray-lite');
+        }
+
+        h4 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+
+            @include themify {
+                border-bottom: 1px solid themed('default');
+            }
+        }
+
+        span {
+            font-size: 16px;
+            display: block;
+            padding: 4px 0;
+        }
+
+        a {
+            display: table;
+            padding: 4px 0;
+            transition: 200ms ease-in-out;
+
+            @include themify {
+                color: themed('primary');
+            }
+
+            &:hover {
+                @include themify {
+                    color: themed('primary-hover');
+                }
+            }
+        }
+        
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .red {
+        background-color: #fc4b4b;
+    }
+    .green {
+        background-color: #37bc9b;
+    }
+}

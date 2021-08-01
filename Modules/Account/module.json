@@ -1,0 +1,11 @@
+{
+    "name": "Account",
+    "alias": "account",
+    "description": "The Cynoinfotech Account Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Account\\Providers\\RouteServiceProvider"
+    ]
+}

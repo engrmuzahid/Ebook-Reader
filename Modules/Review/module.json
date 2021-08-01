@@ -1,0 +1,15 @@
+{
+    "name": "Review",
+    "alias": "review",
+    "description": "The Cynoinfotech Review Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Review\\Providers\\ReviewServiceProvider",
+        "Modules\\Review\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,23 @@
+.confirmation {
+    margin-top: 30px;
+
+    i {
+        font-size: 100px;
+        -webkit-text-stroke: 9px #ffffff;
+
+        @include themify {
+            color: themed('success');
+        }
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 28px;
+        display: block;
+        margin-top: 10px;
+
+        > span {
+            font-weight: 600;
+        }
+    }
+}

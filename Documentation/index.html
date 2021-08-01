@@ -1,0 +1,1314 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>eBook - Laravel CMS Script | Documentation</title>
+        <meta name="description" content="eBook - Laravel CMS Script">
+        <meta name="author" content="CynoInfotech">
+		<link rel="shortcut icon" type="image/png" href="assets/images/ci-main-16.png"/>		
+		<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">		
+        <link rel="stylesheet" href="assets/css/bootstrap.css" media="all">
+        <link rel="stylesheet" href="assets/css/perfect-scrollbar.css" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+        <link rel="stylesheet" href="assets/css/style.css" media="all">        
+        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>        
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/perfect-scrollbar.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                "use strict";
+                $('#ci_nav').perfectScrollbar();
+            });
+        </script>        
+    </head>
+	
+    <body class="documenter-project-crocshop" data-spy="scroll" data-target="#ci_nav_cover">
+        <div class="content-inner">            
+            <div id="ci_sidebar" class="active_menu">
+                <div id="ci_nav_cover">
+                    <ul id="ci_nav" class="nav" data-offset-top="125">					
+						<li class="tab-heading"><span class="tab-txt">Getting Started</span></li>
+                        <li class="active">
+							<a title="Introduction" class="scroll-a" href="#introduction">
+								<i class="fa fa-info"></i><span class="tab-txt">Introduction</span>
+							</a>
+						</li>
+						<li>
+							<a title="Requirements" class="scroll-a" href="#requirements">
+								<i class="fa fa-server"></i><span class="tab-txt">Server Requirements</span>
+							</a>
+						</li>
+						<li>
+							<a title="installation" class="scroll-a" href="#installation">
+								<i class="fa fa-cloud-upload"></i><span class="tab-txt">Installation</span>
+							</a>
+						</li>
+						<li class="tab-heading"><span class="tab-txt">Admin Panel</span></li>
+						<li>
+							<a title="Admin Login" class="scroll-a" href="#login">
+								<i class="fa fa-sign-in"></i><span class="tab-txt">Login</span>
+							</a>
+                        </li>
+                        <li>
+							<a title="Dashboard" class="scroll-a" href="#dashboard">
+								<i class="fa fa-dashboard"></i><span class="tab-txt">Dashboard</span>
+							</a>
+                        </li>
+                        <li>
+							<a title="Files" class="scroll-a" href="#files">
+								<i class="fa fa-camera"></i><span class="tab-txt"> Files</span>
+							</a>
+						</li>
+						<li>
+							<a title="Authors" class="scroll-a" href="#authors">
+								<i class="fa fa-user"></i><span class="tab-txt">Authors</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Categories" class="scroll-a" href="#categories">
+								<i class="fa fa-tags"></i><span class="tab-txt">Categories</span>
+							</a>
+						</li>
+						<li>
+							<a title="eBooks" class="scroll-a" href="#eBooks">
+								<i class="fa fa-book"></i><span class="tab-txt">eBooks</span>
+							</a>
+						</li>
+						<li>
+							<a title="Reported eBooks" class="scroll-a" href="#reportedeBooks">
+								<i class="fa fa-flag"></i><span class="tab-txt">Reported eBooks</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Reviews" class="scroll-a" href="#reviews">
+								<i class="fa fa-star"></i><span class="tab-txt">Reviews</span>
+							</a>
+						</li>
+						<li>
+							<a title="Pages" class="scroll-a" href="#pages">
+								<i class="fa fa-file"></i><span class="tab-txt">Pages</span>
+							</a>
+						</li>
+						<li>
+							<a title="Users" class="scroll-a" href="#users">
+								<i class="fa fa-users"></i><span class="tab-txt">Users</span>
+							</a>
+						</li>
+						<li>
+							<a title="Roles" class="scroll-a" href="#roles">
+								<i class="fa fa-universal-access"></i><span class="tab-txt">Roles</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Menus" class="scroll-a" href="#menus">
+								<i class="fa fa-bars"></i><span class="tab-txt">Menus</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Sliders" class="scroll-a" href="#sliders">
+								<i class="fa fa-sliders"></i><span class="tab-txt">Sliders</span>
+							</a>
+						</li>
+						<li>
+							<a title="Settings" class="scroll-a" href="#settings">
+								<i class="fa fa-cogs"></i><span class="tab-txt">Settings</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Theme Settings" class="scroll-a" href="#ThemeSettings">
+								<i class="fa fa-desktop"></i><span class="tab-txt">Theme Settings</span>
+							</a>
+						</li>
+                        <li>
+							<a title="Translations" class="scroll-a" href="#Translations">
+								<i class="fa fa-language"></i><span class="tab-txt">Translations</span>
+							</a>
+						</li>
+                        
+						<li>
+							<a title="Update Guide" class="scroll-a" href="#updateGuide">
+								<i class="fa fa-wrench"></i><span class="tab-txt">Update Guide</span>
+							</a>
+						</li>
+                        
+                        <li class="tab-heading"><span class="tab-txt">Change Logs</span></li>
+                        <li>
+							<a title="Change Logs" class="scroll-a" href="#ChangeLogs">
+								<i class="fa fa-bell"></i><span class="tab-txt">Change Logs</span>
+							</a>
+						</li>
+                        <li class="tab-heading"><span class="tab-txt">Demo & Support</span></li>
+						<li>
+							<a title="Demo" class="scroll-a" href="#demo">
+								<i class="fa fa-smile-o"></i><span class="tab-txt">Demo</span>
+							</a>
+						</li>
+						
+						<li>
+							<a title="Support" class="scroll-a" href="#support">
+								<i class="fa fa-support"></i><span class="tab-txt">Support</span>
+							</a>
+						</li>
+						
+						
+					</ul>
+                </div>
+            </div>
+			
+			<!-----------------------------Main content ----------------------------->
+			
+            <div id="ci-content-main" class="active_content">
+			
+                <div id="top-header" class="top-header active-top">
+                    <div class="header-logo-block">
+                        <a href="https://www.cynoinfotech.com/" id="ci_logo">
+                            <img src="assets/images/logo-for-ci.png" alt="CynoInfotech" width="70%" />
+                        </a>
+                    </div>
+                    <div class="header-buttons-block">
+                        <div class="header-buttons-block-inner">
+                            <div class="header-buttons-block-inner-content">
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                                data-target="#top-header-btns">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>									
+                                    <div class="collapse navbar-collapse" id="top-header-btns">
+                                        <ul class="nav navbar-nav">	                                       
+                                           <li><a target="_blank" class="header-btn" href="https://www.cynoinfotech.com/contact-us/">Contact Us</a></li>
+                                        </ul>
+                                    </div>									
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+				
+                <div id="ci_content">
+                    
+                    <!-- Introduction -->
+                    <section id="introduction" class="st-section">
+                        <div style="margin-top:38px;" class="panel panel-part">
+						    <div class="panel-body">  
+                                <a href="images/ebook-banner.jpg" class="fancybox" data-fancybox="gallery" data-caption="Introduction" >
+                                    <img alt="eBook - Laravel CMS Script" src="images/ebook-banner.jpg" class="image_with_padding">
+                                </a>
+									
+                                <ul>
+                                    <li>By: CynoInfotech Team</li>
+									<li>Platform: Laravel</li>									
+                                    <li>Email: <a href="mailto:info@cynoinfotech.com">info@cynoinfotech.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Server Requirements -->
+                    <section id="requirements">
+                        <div class="panel panel-part">
+							<h3 class="panel-title">Server Requirements</h3>
+                           
+                            <div class="panel-body">
+                                <ul>
+                                    <li>PHP 7.2.5+</li>
+									<li>MySQL 5.6+</li>
+                                    <li>Intl PHP Extension</li>
+                                    <li>OpenSSL PHP Extension</li>
+                                    <li>PDO PHP Extension</li>
+                                    <li>Mbstring PHP Extension</li>
+                                    <li>Tokenizer PHP Extension</li>
+                                    <li>XML PHP Extension</li>
+                                    <li>Ctype PHP Extension</li>
+                                    <li>JSON PHP Extension</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Installation -->
+                    <section id="installation">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Installing eBooks</h3>
+                            <div class="panel-body">
+                                <p><strong>Step 1: Extract and Upload</strong></p>
+                                <p>Unzip the downloaded archive package. Rename the <code>eBook </code> directory to your desired directory name and upload the directory to your web server through FTP or Control Panel.</p>
+                                
+                                <p><strong>Step 2: Creating Database</strong></p>
+                                <p>Create a database for eBook through your server control panel. If your server has phpMyAdmin, then you can also create a database using phpMyAdmin.</p> 
+                                
+                                <p><strong>Step 3: Run Installation Wizard</strong></p>
+                                <p>Go to your website address, then you'll see an installation wizard.</p>
+                                <div class="alert alert-danger" role="alert">
+                                  <b>Note:- You should configure your web server's document / web root to be the <code>public</code> directory.</b>
+                                </div>    
+                                
+                                <p><b><u>Welcome</u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Installer/Welcome.jpg" class="fancybox" data-fancybox="gallery" data-caption="Installation- Welcome" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Installer/Welcome.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                
+                                <p><b><u>Requirements</u></b></p>
+                                <p>Requirements page checks if your server meets the requirements and has the correct directory permissions to Application.</p>
+
+                                <p>Directories within the storage and the bootstrap/cache directories should be writable by your web server or Application will not run.</p>
+                            
+                                <div class="screen-shot-center">
+                                    <a href="images/Installer/Requirements.jpg" class="fancybox" data-fancybox="gallery" data-caption="Installation- Requirements" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Installer/Requirements.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Configuration</u></b></p>
+                                <p>You need to fill the database connection details, admin user details, and site details, then click the Install button to install Application.</p>
+                                
+								<div class="screen-shot-center">
+                                    <a href="images/Installer/Configuration.jpg" class="fancybox" data-fancybox="gallery" data-caption="Installation- Configuration" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Installer/Configuration.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u> Complete</u></b></p>
+                                <p>You'll see a success message after successfully installing Application.</p>
+                                
+								<div class="screen-shot-center">
+                                    <a href="images/Installer/Complete.jpg" class="fancybox" data-fancybox="gallery" data-caption="Installation- Complete" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Installer/Complete.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+								
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Login -->
+                    <section id="login">
+                        <div class="panel panel-part">
+							
+                            <h1 class="panel-title">Admin Panel</h1>
+                            <div class="panel-body">
+                                <p>Admin panel is the place where you can manage eBooks, categories,  pages, and much more. You can also customize the look of your site from the admin panel.</p>
+                            </div>
+                            <h3 class="panel-title">Login</h3>
+                            <div class="panel-body">
+                                <p>To access the admin panel add /admin after your website address. For example if your website address is "www.example.com", then your admin panel is located at "www.example.com/admin".</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Sign In.jpg" class="fancybox" data-fancybox="gallery" data-caption="Sign In" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Sign In.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>Now you have to enter your email and password that you've provided during the installation process. After pressing the Sign In button, then you'll redirect to the dashboard.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Dashboard -->
+                    <section id="dashboard">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Dashboard</h3>
+                            <div class="panel-body">
+                                <p>From the dashboard you'll see an quick overview of your site</p>
+                                <p>you'll see Total eBooks, Total Reported eBooks,  Total Users, Latest  eBooks, Latest  Review and Latest Reported eBooks</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Dashboard.jpg" class="fancybox" data-fancybox="gallery" data-caption="Dashboard" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Dashboard.jpg" class="image_with_padding">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Files -->
+                    <section id="files">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Files</h3>
+                            <div class="panel-body">
+                                
+                                <p>All upload Files are listed under the Files menu.</p>
+                                
+                                <p><b>Uploading Files</b></p>
+                                <p>You can drag & drop files in the area or click on this section to upload files as many files as you want</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Files.jpg" class="fancybox" data-fancybox="gallery" data-caption="Files" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Files.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p>In order to delete any file select the file and press the Delete button.</p>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Authors -->
+                    <section id="authors">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Authors</h3>
+                            <div class="panel-body">
+                                <p>All book's authors are listed here.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Authors.jpg" class="fancybox" data-fancybox="gallery" data-caption="Authors" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Authors.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>In order to edit a author click the author row in the table.</p>
+                                <p><strong>Create Author:-</strong></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Authors - Create - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Authors - Create - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Authors - Create - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Name (translatable):</b> The name of the authors.</li>
+                                    <li><b>Image:</b> Author Image.</li>
+                                    <li><b>Description:</b>Author description.</li>
+                                    <li><b>Verified:</b> Verified the Author. Only verified author profile visible at the front-end. only admin users can verify the other.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Categories -->
+                    <section id="categories">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Categories</h3>
+                            <div class="panel-body">
+                                <p>You can create, edit and see a tree of categories from the Categories menu.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Categories.jpg" class="fancybox" data-fancybox="gallery" data-caption="Categories" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Categories.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p><strong>Create Category:-</strong></p>
+                                
+                                <ul>
+                                    <li><b>Name (translatable):</b> The name of the category.</li>
+                                    <li><b>Status:</b> Enable the category by checking this checkbox. Only enabled categories can be used.</li>
+                                </ul>
+                                
+                                <p><strong>Create Subcategory:-</strong></p>
+                                <p>In order to create a subcategory select a category, then click on the <code>Add Subcategory</code> button. After saving the subcategory you'll see a nested category under the root category.</p>
+                                <p>You can create as many subcategory as you want.</p>
+                                <p>You can drag & drop the category to change the order of category and parent of the subcategory.</p>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- eBooks -->
+                    <section id="eBooks">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">eBooks</h3>
+                            <div class="panel-body">
+                                <p>All eBooks are listed under the eBooks menu.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks.jpg" class="fancybox" data-fancybox="gallery" data-caption="eBooks" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>In order to edit a eBooks click the eBooks row in the table.</p>
+                                
+                                <p><strong>Create eBook:-</strong></p>
+                                <p>Navigate to <b>eBooks >  Create eBook</b> to create a new eBook.</p>
+                                
+                                <div class="alert alert-danger" role="alert">
+                                  <b>Note:- Fields with the red asterisks are required.</b>
+                                </div>
+                                
+                                <p><b><u> Information </u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Information.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Information " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Information.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Title (translatable):</b> The name of the eBook.</li>
+                                    <li><b>User:</b> Select the name of the user who uploaded this eBook.</li>
+                                    <li><b>Categories:</b> You can organize eBook by adding categories to it.</li>
+                                    <li><b>Authors:</b> Select ebook authors from available list. Try entering an author that isn't listed in the dropdown - you'll be able to add it as a new author! Type new author name and press enter key to add.</li>
+                                    <li><b>Publisher Name (translatable):</b> The Publisher name of the eBook .</li>
+                                    <li><b>Publication Year:</b> The Publication Year of the eBook.</li>
+                                    <li><b>Password Protected:</b> If you want to create password protected eBook then enter password.</li>
+                                    <li><b>ISBN Number:</b> Enter the International Standard Book Number.</li>
+                                    <li><b>Featured:</b> Featured  the eBook by checking this checkbox.</li>
+                                    <li><b>Price:</b> eBook price .</li>
+                                    <li><b>Buy URL:</b> Buy now URL.</li>
+                                    <li><b>Private:</b> Private the eBook by checking this checkbox. only login user can view this private eBook  </li>
+                                    <li><b>Status:</b> Enable the eBook by checking this checkbox. User will only see the enabled eBook.</li>
+                                </ul>
+                                
+                                <p><b><u> Description </u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Description.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Description " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Description.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Description (translatable):</b> The description of the eBook.</li>
+                                    <li><b>Short Description (translatable):</b> The Short description of the eBook.</li>
+                                </ul>
+                                
+                                <p><b><u> eBook Cover Image & file </u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Book Cover Image & File.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Book Cover Image & File " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Book Cover Image & File.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                
+                                
+                                <ul>
+                                    <li><b>Book Cover Image:</b> Select Book cover image of the eBook.</li>
+                                    <li><b>File Type:</b> Select the ebook file type. There are four options available - upload, multiple audio files, external URL and embed code</li>
+                                    <li><b>eBook File:</b> Based on File Type options you can upload the eBook file, Only pdf, epub, doc, docx, txt, xls, xlsx, ppt, pptx, mp3, wav files are allowed. or you can enter the URL of the file. or you can enter the embed code. </li>
+                                </ul>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Book Cover Image & File-4.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Book Cover Image & File " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Book Cover Image & File-4.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>For audio books, you can upload multiple files</p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Book Cover Image & File-2.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Book Cover Image & File " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Book Cover Image & File-2.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Book Cover Image & File-3.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Book Cover Image & File " >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Book Cover Image & File-3.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u> SEO </u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/eBooks - Create - Seo.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create eBooks - Seo" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/eBooks - Create - Seo.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Meta Title (translatable)</b></li>
+                                    <li><b>Meta Keywords (translatable)</b></li>
+                                    <li><b>Meta Description  (translatable)</b></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+					<!-- Reported eBooks -->
+                    <section id="reportedeBooks">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Reported eBooks</h3>
+                            <div class="panel-body">
+                                <p>All Reported eBooks are listed under the Reported eBooks menu.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Reported eBooks.jpg" class="fancybox" data-fancybox="gallery" data-caption="Reported eBooks" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Reported eBooks.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Reviews -->
+                    <section id="reviews">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Reviews</h3>
+                            <div class="panel-body">
+                                <p>All review of eBooks are listed under the Review menu.</p>
+                                <p>You can also see eBook specific reviews from the eBook edit page under the Reviews tab.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Reviews.jpg" class="fancybox" data-fancybox="gallery" data-caption="Reviews" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Reviews.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p>Admin can edit any user's submitted review. In order to edit a user's review click the row in the table. </p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Reviews - Edit.jpg" class="fancybox" data-fancybox="gallery" data-caption="Reviews - Edit" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Reviews - Edit.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Pages -->
+                    <section id="pages">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Pages</h3>
+                            <div class="panel-body">
+                                <p>You can create as many custom page as you want. You can create an About us page or a Privacy Policy page to give your user a better knowledge of your site.</p>
+                                <p>You can also add a link of your custom page to the navigation menu. You'll learn how to customize the navigation menu later in this guide</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Pages.jpg" class="fancybox" data-fancybox="gallery" data-caption="Pages" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Pages.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>In order to edit a page click the row in the table.</p>
+                                
+                                <p><b>Create Page:-</b></p>
+                                <p>Navigate to <b>Pages > Create Page</b> to create a new page.</p>
+                                
+                                <p><b><u>General</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Pages - Create - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Page - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Pages - Create - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <ul>
+                                    <li><b>Name (translatable):</b> The name of the page.</li>
+                                    <li><b>Body (translatable):</b> The content of the page.</li>
+                                    <li><b>Status:</b> Enable the page by checking this checkbox.</li>
+                                </ul>
+                                
+                                <p><b><u> SEO </u></b></p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Pages - Create - Seo.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Pages - Seo" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Pages - Create - Seo.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Meta Title (translatable)</b></li>
+                                    <li><b>Meta Keywords (translatable)</b></li>
+                                    <li><b>Meta Description  (translatable)</b></li>
+                                </ul>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </section>
+                    
+                    <!-- Users -->
+                    <section id="users">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Users</h3>
+                            <div class="panel-body">
+                                <p>All users  are listed under the Users menu.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Users.jpg" class="fancybox" data-fancybox="gallery" data-caption="Users" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Users.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>In order to edit a user click the row in the table.</p>
+                                
+                                
+                                <p><b>Create User:-</b></p>
+                                <p>Navigate to <b>Users  > Create User</b> to create a new user</p>
+                                
+                                <p><b><u>General</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Users - Create - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Users - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Users - Create - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Profile</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Users - Create - Profile.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Users - Profile" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Users - Create - Profile.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Permissions</u></b></p>
+                                <p>You can manage what a user can do in your system by creating roles or choosing permissions for the specific user. By default, user permissions are inherited from the roles</p>
+                                <p>Role permissions and user-specific permissions are merged together to determine the user's ability. When permissions are merged together user-specific permissions will always have more priority than role permissions. So, if you want to give a user all permissions from a role except one, then choose the role for the user, and Deny the specific permission.</p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Users - Create - Permissions.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Users - Permissions" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Users - Create - Permissions.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Roles -->
+                    <section id="roles">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Roles</h3>
+                            <div class="panel-body">
+                                <p>All users roles are listed under the Roles menu.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Roles.jpg" class="fancybox" data-fancybox="gallery" data-caption="Roles" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Roles.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>In order to edit a role click the row in the table.</p>
+                                
+                                <p><b>Create Role:-</b></p>
+                                <p>Navigate to <b>Roles  > Create Role </b> to create a new role</p>
+                                
+                                <p><b><u>General</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Roles - Create - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Roles - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Roles - Create - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Permissions</u></b></p>
+                                <p>Role-specific permissions are a good way to give permissions to multiple users at once. You can override role permissions from the user-specific permissions for any user.</p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Roles - Create - Permissions.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Roles - Permissions" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Roles - Create - Permissions.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Menus -->
+                    <section id="menus">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Menus</h3>
+                            <div class="panel-body">
+                                <p>You can customize your site navigation menus from here. There are usually three types of menus, Primary Menu, Category Menu, and Footer Menu.</p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Menus.jpg" class="fancybox" data-fancybox="gallery" data-caption="Menu" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Menus.jpg" class="image_with_padding">
+                                    </a>
+                                </div>
+                                <p>In order to edit a menu and menu item click the row in the table.</p>
+                                
+                                <p>After creating menus, navigate to <b>Theme Settings > General Settings > Menus</b> then choose Primary Menu, Category Menu, and Footer Menu.</p>
+                                
+                                <p><b>Create Menu:-</b></p>
+                                <p>Navigate to <b>Menus > Create Menu</b> to create a new menu</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Menus - Create.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Menu" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Menus - Create.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Name (translatable):</b>The name of the menu item.</li>
+                                    <li><b>Status:</b> Enable the menu.</li>
+                                </ul>
+                                
+                                <p>After saving the menu you'll see a Create Menu Item button, press the button to create a menu item for the menu</p>
+                                <p>Also, you can manage already created menu items from here</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Menus - Edit - Menu Items.jpg" class="fancybox" data-fancybox="gallery" data-caption="edit Menu" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Menus - Edit - Menu Items.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b>Create Menu Item:-</b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Menus - Create - Menu Item.jpg" class="fancybox" data-fancybox="gallery" data-caption="edit Menu Item" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Menus - Create - Menu Item.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Name (translatable):</b> The name of the menu item.</li>
+                                    <li><b>Type:</b> A menu item can either be Category, Page, or URL type.</li>
+                                    <li><b>Category:</b> If you've selected menu item type to Category type, then you'll see a Category field.</li>
+                                    <li><b>Page:</b> If you've selected menu item type to Page type, then you'll see a Page field.</li>
+                                    <li><b>URL:</b> If you've selected menu item type to URL type, then you'll see a URL field.</li>
+                                    <li><b>Fluid Menu:</b> By default, menu items will be a drop-down menu. If you want to make a full-width menu check this box. You only need to check this box for the parent menu item.</li>
+                                    <li><b>Target:</b> Specify how the menu item will be opened.</li>
+                                    <li><b>Parent Menu Item:</b> Create a nested menu by specifying a parent menu item.</li>
+                                    <li><b>Status:</b> Enable the menu item.</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Sliders -->
+                    <section id="sliders">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Sliders</h3>
+                            <div class="panel-body">
+                                <p>You can create multiple sliders for your site, then switch between them anytime you like.</p>
+                                <p>Navigate to <b>Theme Settings >  General Settings > General </b> to switch home page slider</p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Sliders.jpg" class="fancybox" data-fancybox="gallery" data-caption="Sliders" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Sliders.jpg" class="image_with_padding">
+                                    </a>
+                                </div>
+                                <p>In order to edit a Sliders click the row in the table.</p>
+                                
+                                <p><b>Create Slider:-</b></p>
+                                <p>Navigate to <b>Sliders  > Create Slider </b> to create a new Slider</p>
+                                
+                                <p><b><u>Slides</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Sliders - Create - Slides.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Slider slides" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Sliders - Create - Slides.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Slides Options</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Sliders - Create - Slides-Options.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Slider slides options" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Sliders - Create - Slides-Options.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Settings</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Sliders - Create - Settings.jpg" class="fancybox" data-fancybox="gallery" data-caption="Create Slider Settings" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Sliders - Create - Settings.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Settings -->
+                    <section id="settings">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Settings </h3>
+                            <div class="panel-body">
+                                
+                                <p><b><u>General</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Site Name:</b> Site Name.</li>
+                                    <li><b>Site Email:</b> Site Email.</li>
+                                    <li><b>Supported Locales:</b> Supported locales of your site.</li>
+                                    <li><b>Default Locale:</b> The default locale of your site.</li>
+                                    <li><b>Default Timezone:</b> The default timezone of your site .</li>
+                                    <li><b>New User Role:</b> Role of the user when they register from front-end.</li>
+                                    <li><b>Enable Registrations:</b> Allow new user registrations.</li>
+                                    <li><b>Send Welcome Email:</b> Send an welcome email to the user when they register from front-end.</li>
+                                    <li><b>Auto Approve New Member:</b> Approve Member automatically When they register from front-end </li>
+                                    <li><b>Cookie Bar:</b> enable/disable Cookie bar </li>
+                                </ul>
+                                
+                                <p><b><u>Admin Theme</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Admin Theme.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - eBook" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Admin Theme.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                                               
+                                <p><b><u>eBook</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - eBook.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - eBook" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - eBook.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Enable Front-end eBook upload:</b> Allow user to upload new an eBook from front-end.</li>
+                                    <li><b>Auto Approve eBook:</b> Auto Approve eBook after upload.</li>
+                                    <li><b>Auto Approve eBook Reviews:</b> User reviews will be approved automatically.</li>
+                                    <li><b>Enable eBook Report button:</b> Display Report button in eBook detail page.</li>
+                                    <li><b>Enable eBook Download button:</b> Display Download button in eBook detail page.</li>
+                                    <li><b>Reading books by members only:</b> User must be login into their account to read the book.</li>
+                                    <li><b>Enable Comment:</b> Allow user to comment on ebook.</li>
+                                    <li><b>eBook Listing View Mode:</b> change default view(grid/list) for eBooks listing page.</li>
+                                    
+                                </ul>
+                                
+                                <p><b><u>E-Mail</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Email.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Email" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Email.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>E-Mail From Address:</b> This mail from address is used for all kind of emails.</li>
+                                    <li><b>E-Mail From Name:</b> This mail from name is used for all kind of emails.</li>
+                                    <li><b>E-Mail Host:</b> The host of your SMTP server.</li>
+                                    <li><b>E-Mail Port:</b> The Port of your SMTP server.</li>
+                                    <li><b>E-Mail Username:</b> The Username of your SMTP server.</li>
+                                    <li><b>E-Mail Password:</b> The Password of your SMTP server.</li>
+                                    
+                                </ul>
+                                
+                                <p><b><u>Maintenance</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Maintenance.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Maintenance" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Maintenance.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Newsletter</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Newsletter.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Newsletter" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Newsletter.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                
+                                
+                                
+                                
+                                <p><b><u>Custom CSS/JS</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Custom js-css.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Custom CSS/JS" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Custom js-css.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                 <ul>
+                                    <li><b>Google Analytics Code:</b>.</li>
+                                    <li><b>Custom JS:</b> Custom js code. This custom JS added to the Footer.</li>
+                                    <li><b>Custom CSS:</b> Custom CSS. This custom CSS added to the header</li>
+                                </ul>
+                                
+                                <p><b><u>Social Logins - Facebook</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Facebook.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Facebook" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Facebook.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Social Logins - Google</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Settings - Google.jpg" class="fancybox" data-fancybox="gallery" data-caption="Settings - Google" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Settings - Google.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- Theme Settings -->
+                    <section id="ThemeSettings">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Theme Settings - Cynoebook </h3>
+                            <div class="panel-body">
+                                <p>Navigate to <b>Theme Settings  </b> for theme setting</p>
+                                
+                                <p><b><u>General</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - General.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - General" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - General.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Theme:</b> Select theme color for frontend.</li>
+                                    <li><b>Mail Theme:</b> Select mail theme color.</li>
+                                    <li><b>Layout:</b> Select front end layout.There are two option - Slider Layout and Banner Image .</li>
+                                    <li><b>Slider:</b> Select Slider for display on the home page. This slider only display if the Layout is Slide.</li>
+                                    <li><b>Privacy Policy Page:</b> Select the privacy policy page for your site.</li>
+                                    <li><b>Footer Section One:</b> Footer Summary, short description of your site.</li>
+                                    <li><b>Footer Section Two Title:</b> Title text for the second footer section.</li>
+                                    <li><b>Footer Section Two:</b>Put your custom HTML for the second footer section.</li>
+                                    <li><b>Footer Copyright Text:</b> You can use <code>site_name</code>, <code>site_url</code>, and <code>year</code> variable in copyright text. Wrap the variable inside mustache like below.<br>
+                                    {{ site_name }}</li>
+                                </ul>
+                                
+                                <p><b><u>Logo</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Logo.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Logo" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Logo.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Favicon:</b> Set favicon for your site.</li>
+                                    <li><b>Header Logo:</b> Set header logo for your site.</li>
+                                    <li><b>Footer Logo:</b> Set footer logo for your site .</li>
+                                    <li><b>Mail Logo:</b> Set mail logo for your site .</li>
+                                </ul>
+                                
+                                <p><b><u>Menus</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Menus.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Menus" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Menus.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Primary Menu:</b> Primary menu of the site.</li>
+                                    <li><b>Category Menu Title (translatable)</b> </li>
+                                    <li><b>Category Menu:</b>Category menu of the site</li>
+                                    <li><b>Footer Menu 1 Title (translatable)</b></li>
+                                    <li><b>Footer Menu 1:</b> Footer menu 1 of the site .</li>
+                                    <li><b>Footer Menu 2 Title (translatable)</b></li>
+                                    <li><b>Footer Menu 2:</b> Footer menu 2 of the site .</li>
+                                </ul>
+                                
+                                <p><b><u>Social Links</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Social Links.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Social Links" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Social Links.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>Social links are shown in the footer of the website.</p>
+                                
+                                <p><b><u>Contact Page Info</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Contact Page Info.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Contact Page Info" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Contact Page Info.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <p>Contact page right side information</p>
+                                
+                                <p><b><u>Advertisement</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Advertisement.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Advertisement" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Advertisement.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Slider Banners</u></b></p>
+                                <p>If the front end layout is Banner Image then this section is displayed. here admin user upload banner image </p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Slider Banners.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Slider Banners" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Slider Banners.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Home AD section</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Home AD section 1.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Home AD section 1" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Home AD section 1.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <!-- <p><b><u>Features</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Features.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Features" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Features.jpg" class="image_with_padding">
+                                    </a>
+								</div> 
+                                
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Icon:</b> Font Awesome icon class.</li>
+                                    <li><b>Title (translatable):</b> Title for the feature.</li>
+                                    <li><b>Subtitle (translatable):</b> Subtitle for the feature.</li>
+                                </ul>-->
+                                
+                                <p><b><u>Featured eBook Carousel</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Featured eBook Carousel.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Featured eBook Carousel" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Featured eBook Carousel.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Section Title (translatable):</b> Title for the section.</li>
+                                    <li><b>Total eBooks:</b> Set limit for showing feature ebooks.</li>
+                                </ul>
+                                
+                                <p><b><u>Banner Section</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Banner Section 1.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Banner Section 1" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Banner Section 1.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <p><b><u>Authors Section</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Authors Section.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Authors Section" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Authors Section.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Order By:</b> Display Order of authors. There are 3 options available "Latest", "Oldest", "Top Authors by book count"</li>
+                                    <li><b>Section Title (translatable):</b> Title for the section.</li>
+                                    <li><b>Total Authors:</b> Set limit for showing  Authors.</li>
+                                </ul>
+                                
+                                
+                                <p><b><u>Recent eBooks</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Recent eBooks.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Recent eBooks" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Recent eBooks.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Section Title (translatable):</b> Title for the section.</li>
+                                    <li><b>Total eBooks:</b> Set limit for showing recent ebooks.</li>
+                                </ul>
+                                
+                                <p><b><u>Popular Categories Tabs</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Popular Categories Tabs.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - RPopular Categories Tabs" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Popular Categories Tabs.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Section Title (translatable):</b> Title for the section.</li>
+                                    <li><b>Tab Title:</b> Tab Title.</li>
+                                    <li><b>Tab Category:</b>Selected category  eBooks are displayed in this tab.</li>
+                                    <li><b>Total eBooks:</b> Set limit for showing  ebooks.</li>
+                                    
+                                    
+                                </ul>
+                                
+                                <p><b><u>Users Section</u></b></p>
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Theme Settings - Users Section.jpg" class="fancybox" data-fancybox="gallery" data-caption="Theme Settings - Users Section" >
+                                        <img alt="eBook - Laravel CMS Script" src="images/Admin/Theme Settings - Users Section.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                <ul>
+                                    <li><b>Section Status:</b> Enable this section.</li>
+                                    <li><b>Order By:</b> Display Order of users. There are 3 options available "Latest", "Oldest", "Top users by book count"</li>
+                                    <li><b>Section Title (translatable):</b> Title for the section.</li>
+                                    <li><b>Total Users:</b> Set limit for showing  users.</li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+					
+                    
+                    
+                    <!-- Translations -->
+                    <section id="Translations">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Translations </h3>
+                            <div class="panel-body">
+                                
+                                <p>You can translate your application's strings from the built-in translation editor for all supported locales. You can also use the translation editor for editing the default strings.</p>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Translations.jpg" class="fancybox" data-fancybox="gallery" data-caption="Translations" >
+                                        <img alt="Laravel - Advanced Files & Users Management" src="images/Admin/Translations.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                <div class="screen-shot-center">
+                                    <a href="images/Admin/Translations - Edit.jpg" class="fancybox" data-fancybox="gallery" data-caption="Translations Edit" >
+                                        <img alt="Laravel - Advanced Files & Users Management" src="images/Admin/Translations - Edit.jpg" class="image_with_padding">
+                                    </a>
+								</div>
+                                
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+                    <!-- updateGuide -->
+                    <section id="updateGuide">
+                        <div class="panel panel-part">
+							
+                            <h3 class="panel-title">Update Guide </h3>
+                            <div class="panel-body">
+                                
+                                <ul>
+                                    <li>Extract the new downloaded file.</li>
+                                    <li>Open eBook directory.</li>  
+                                    <li>Upload and replace all files except for the .env file in your server.</li>
+                                </ul>
+                                <div class="alert alert-danger" role="alert">
+                                  <b>Before updating eBook backup your database and server files.</b>
+                                </div>   
+                                
+                               
+                                
+                            </div>
+                        </div>
+                    </section>
+					
+					
+					
+					
+					<section id="ChangeLogs">
+                        <div class="panel panel-part">
+							<h3 class="panel-title">Change Logs</h3>
+                           
+                            <div class="panel-body">
+                                <p><b>Version 2.0.3</b> </p>
+                                <pre>
+<b>Update:</b>
+- Update the Laravel version to 7.30.4
+<b>Added:</b>
+- XML sitemap
+- Custom comments system on Books
+- Admin theme colors options
+- Newsletter subscription
+- Setting option for Reading books by members only
+- Setting option for change default view(grid/list) for eBooks listing page
+- Setting option for enable/disable comments
+- Setting option for clear cache
+- Setting option for enable/disable Cookie bar
+<b>Fixed:</b>
+- Fixed category filter issue with pagination
+- Fixed showing duplicate eBooks issues, when an eBook translation is available and apply "alphabetic" sort
+- Fixed search issues
+- Fixed category tree view issues in admin, when deleting parent category
+- Home page is not working when layout to slider and  slider is not selected
+                                </pre>
+                                <p><b>Version 2.0.2</b> - 16 July 2020 </p>
+                                <pre>
+<b>Added:</b>
+- Upload the ebook with audio file format(.mp3 & .wav)
+- Multiple audio files with one book
+- Members only eBook (only login user can view this private eBook)
+- PDF viewer for internal pdf files 
+- Add New languages
+<b>Fixed:</b>
+- Fixed issues in social login
+- Fixed issues in admin search author 
+- Fixed issues in download ebook 
+<b>Improved:</b>
+- Frontend theme design
+                                </pre>
+                                <p><b>Version 2.0.1</b> -  26 May 2020  </p>
+                                <pre>
+<b>Added:</b>
+- Add new options for upload eBooks with embed code.
+- Added Auto-update handler
+<b>Fixed:</b>
+- Removed the download button for ebook with embedded code 
+- Fixed issues in download ebook with external URL
+- Fixed issues in edit review
+                                </pre>
+                                <p><b>Version 2.0.0</b> -  29 April 2020  </p>
+                                <pre>
+<b>Added:</b>
+- New Fields to eBook - ISBN number, buy url, and price
+- Assign multiple authors to eBook
+- Upload ebook with external url
+- On front-side added user listing page and authors listing page
+- New enable/disable setting option for front-side ebook upload 
+- New enable/disable setting option for front-side download & report  eBook button
+- New enable/disable setting option for front-side user registration
+- New 4 sections to the homepage - Popular Books, Author section, Popular Categories Tabs, and User section
+- New option for change color of slider text and button
+- Edit/delete the eBook from grid view & list view
+- Edit ebook from the reported ebook listing in Admin
+<b>Changed:</b>
+- eBook listing & detail page design
+<b>Improved:</b>
+- Frontend theme design
+<b>Fixed:</b>
+- Permission issue in the installation
+- External url issues in the menu
+- Translations are not saving issues
+- Minor bug fixed
+                                </pre>
+                                <p><b>Version  1.0.0</b> - 21 February 2020</p>
+                                <pre><b>Initial release</b></pre>								
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="demo">
+                        <div class="panel panel-part">
+							<h3 class="panel-title">Demo</h3>
+                           
+                            <div class="panel-body">
+                                 <ul> 
+									<li><b>Demo Link:</b> <a href="http://lavdemo.cssfloat.net/eBook/public/" rel="nofollow">http://lavdemo.cssfloat.net/eBook/public/</a></li>
+									
+									<li><b>Demo User Email:</b> demo@gmail.com</li>
+                                    <li><b>Demo User Password:</b> demo123</li>
+                                    
+                                    <li><b>Admin Link:</b> <a href="http://lavdemo.cssfloat.net/eBook/public/admin/" rel="nofollow">http://lavdemo.cssfloat.net/eBook/public/admin/</a></li>
+                                    
+									<li><b>Admin Email:</b> admin@gmail.com</li>
+									<li><b>Admin Password:</b> admin123</li>
+                                </ul>								
+                            </div>
+                        </div>
+                    </section>
+					
+					<section id="support">
+                        <div class="panel panel-part">
+							<h3 class="panel-title">support</h3>
+                           
+                            <div class="panel-body">
+                                 <ul>                                    
+                                    <li>
+										<a href="http://www.cynoinfotech.com/support/" target="_blank">
+										http://www.cynoinfotech.com/support/
+										</a>
+									</li>																							
+                                </ul>								
+                            </div>
+                        </div>
+                    </section>		
+					
+                </div>
+            </div>
+        </div>
+		
+		<script>
+            $(document).ready(function () {
+                $('#sidebar-btn').click(function () {
+                    $('#ci_sidebar').toggleClass('active_menu');
+                    $('#ci-content-main').toggleClass('active_content');
+                    $('#sidebar-btn').toggleClass('act-sidebar');
+                    $('#content-header').toggleClass('active-header');
+                    $('#top-header').toggleClass('active-top');
+                });
+                $('#tog-tab').click(function () {
+                    $('#tog-content').toggleClass('tog-content');
+                });
+            });
+        </script>		
+		<!-- Ninja Slider -->
+		<script src="assets/js/jquery.fancybox.min.js"></script>	
+    </body>
+</html>

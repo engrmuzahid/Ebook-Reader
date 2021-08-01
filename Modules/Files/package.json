@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "devDependencies": {
+        "dropzone": "^5.5.1",
+        "@fancyapps/fancybox": "^3.5.7"
+    }
+}

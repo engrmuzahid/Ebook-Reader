@@ -1,0 +1,19 @@
+{
+    "name": "ci/newsletter",
+    "description": "The CynoInfotech Newsletter Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "spatie/laravel-newsletter": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Newsletter\\": ""
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+  "_from": "pdfjs-dist",
+  "_id": "pdfjs-dist@2.3.200",
+  "_inBundle": false,
+  "_integrity": "sha512-+8wBjU5h8LPZOIvR9X2uCrp/8xWQG1DRDKMLg5lzGN1qyIAZlYUxA0KQyy12Nw5jN7ozulC6v97PMaDcLgAcFg==",
+  "_location": "/pdfjs-dist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "pdfjs-dist",
+    "name": "pdfjs-dist",
+    "escapedName": "pdfjs-dist",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-2.3.200.tgz",
+  "_shasum": "2920dc28ae7f2b8313cd6d6223c97ae85ac07eac",
+  "_spec": "pdfjs-dist",
+  "_where": "C:\\xampp\\htdocs\\dev-eBook\\Themes\\Cynoebook",
+  "browser": {
+    "fs": false,
+    "http": false,
+    "https": false,
+    "node-ensure": false,
+    "zlib": false
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla/pdf.js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-ensure": "^0.0.0",
+    "worker-loader": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Generic build of Mozilla's PDF.js library.",
+  "format": "amd",
+  "homepage": "http://mozilla.github.io/pdf.js/",
+  "keywords": [
+    "Mozilla",
+    "pdf",
+    "pdf.js"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/pdf.js",
+  "name": "pdfjs-dist",
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0-alpha.0 || ^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/pdfjs-dist.git"
+  },
+  "version": "2.3.200"
+}

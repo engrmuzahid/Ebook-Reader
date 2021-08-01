@@ -1,0 +1,127 @@
+.slick-track {
+    float: left #{'/*!rtl:right*/'};
+}
+
+.slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.slick-prev,
+.slick-next {
+    height: auto;
+    z-index: 3;
+
+    &:before {
+        font-family: FontAwesome;
+        color: #626060;
+        font-size: 40px;
+        line-height: normal;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.rtl {
+    .slick-prev,
+    .slick-next {
+        transform: translate(0, -50%) rotateY(180deg);
+    }
+}
+
+.slick-prev {
+    &:before {
+        content: "\f104";
+    }
+}
+
+.slick-next {
+    &:before {
+        content: "\f105";
+    }
+}
+
+.slick-dots {
+    bottom: 0;
+
+    li {
+        width: auto;
+        margin: 0 5px;
+        padding: 10px 0;
+
+        button {
+            position: relative;
+            height: 2px;
+            width: 25px;
+            padding: 0;
+
+            &:before {
+                content: "";
+                height: 2px;
+                width: 25px;
+                opacity: 1;
+
+                @include themify {
+                    background: themed('white-dark');
+                }
+            }
+        }
+    }
+
+    li.slick-active button {
+        &:before {
+            transform: scale(1.1);
+            opacity: 1;
+
+            @include themify {
+                background: themed('primary');
+            }
+        }
+    }
+}
+
+.slick-arrow {
+    .slick-prev,
+    .slick-next {
+        top: -42px;
+        left: auto;
+
+        &:before {
+            font-size: 30px;
+        }
+    }
+
+    .slick-prev {
+        right: 40px;
+    }
+
+    .slick-next {
+        right: 15px;
+    }
+}
+
+
+.slick-lightbox {
+    background: #ffffff !important;
+
+    .slick-lightbox-close {
+        height: 34px;
+        width: 30px;
+
+        &:before {
+            font-family: FontAwesome;
+            font-size: 34px;
+            font-weight: normal;
+            content: "\f00d";
+            color: #626060;
+            -webkit-text-stroke: 4px #ffffff;
+            opacity: 0.75;
+            transition: 200ms ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Page",
+    "alias": "page",
+    "description": "The Cynoinfotech CMS Page Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Page\\Providers\\PageServiceProvider",
+        "Modules\\Page\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

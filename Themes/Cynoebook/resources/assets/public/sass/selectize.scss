@@ -1,0 +1,85 @@
+@import '~selectize/dist/css/selectize';
+
+.selectize-control:not(.multi) {
+    .selectize-input .item,
+    .selectize-dropdown .option {
+        font-size: 14px;
+    }
+
+    .plugin-remove_button [data-value] {
+        padding-right: 0 !important;
+    }
+}
+
+.selectize-control {
+    &.multi .selectize-input > div {
+        padding: 4px 8px;
+    }
+
+    &.plugin-remove_button [data-value] .remove {
+        padding-top: 4px;
+    }
+}
+
+.selectize-input {
+    border-radius: 3px;
+    border-color: #d9d9d9;
+    min-height: 40px;
+    vertical-align: bottom;
+    box-shadow: none !important;
+    transition: 200ms ease-in-out;
+
+    .dropdown-active {
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+
+    > input {
+        margin-top: 2px !important;
+    }
+
+    input {
+        font-size: 15px;
+        transition: 0ms !important;
+
+        &::-moz-placeholder {
+            color: #999999;
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: #999999;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #999999;
+        }
+    }
+
+    &.focus {
+        box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+
+        @include themify {
+            border-color: themed('primary');
+        }
+    }
+
+    .item {
+        border-radius: 3px;
+    }
+}
+
+.selectize-dropdown {
+    [data-selectable] {
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #f9f9f9;
+    }
+
+    .selectize-dropdown-content .create strong {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+    }
+}

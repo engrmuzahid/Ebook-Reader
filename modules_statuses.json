@@ -1,0 +1,20 @@
+{
+    "Base": true,
+    "Setting": true,
+    "Admin": true,
+    "Translation": true,
+    "User": true,
+    "Files": true,
+    "Author": true,
+    "Category": true,
+    "Ebook": true,
+    "Menu": true,
+    "Page": true,
+    "Meta": true,
+    "Account": true,
+    "Favorite": true,
+    "Contact": true,
+    "Review": true,
+    "Slider": true,
+    "Newsletter": true
+}

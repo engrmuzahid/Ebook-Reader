@@ -1,0 +1,703 @@
+.btn {
+    font-family: $font-opensans;
+    font-size: 16px;
+    border: 1px solid;
+    /*padding: 10px 30px;*/
+    border-radius: 3px;
+    letter-spacing: 0.2px;
+    transition: 200ms ease-in-out;
+    outline: 0 !important;
+}
+
+.btn-primary {
+    @include themify {
+        color: themed('white');
+        background: themed('primary');
+        border-color: themed('primary');
+    }
+
+    &:active, &:hover, &:focus, &:active:focus {
+        @include themify {
+            background: themed('primary-hover');
+            border-color: themed('primary-hover');
+        }
+    }
+
+    &.disabled, &[disabled] {
+        &:hover, &:focus, &:hover:focus {
+            @include themify {
+                background: themed('primary');
+            }
+        }
+    }
+}
+
+.btn-default {
+    background: #ffffff;
+
+    @include themify {
+        border-color: themed('white-dark');
+    }
+
+    &:active, &:hover, &:focus, &:active:focus {
+        background: #f4f6f8;
+
+        @include themify {
+            border-color: themed('default');
+        }
+    }
+}
+
+.btn-success {
+    @include themify {
+        background: themed('success');
+    }
+}
+
+.btn-danger {
+    @include themify {
+        background: themed('danger');
+    }
+
+    &:active, &:hover, &:focus, &:active:focus {
+        @include themify {
+            background: themed('danger-hover');
+        }
+    }
+
+    &.disabled, &[disabled] {
+        &:hover, &:focus, &:hover:focus {
+            @include themify {
+                background: themed('danger');
+            }
+        }
+    }
+}
+
+.btn-view {
+    display: inline-block;
+    transition: 200ms ease-in-out;
+
+    @include themify {
+        color: themed('black');
+    }
+
+    &:hover {
+        @include themify {
+            color: themed('primary');
+        }
+    }
+}
+
+.go-back-link {
+    border-radius: $radius-default;
+    display: table;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    transition: 200ms ease-in-out;
+
+    @include themify {
+        border: 1px solid themed('primary');
+        color: themed('primary');
+    }
+
+    &:hover, &:focus {
+        color: #ffffff;
+        text-decoration: none;
+
+        @include themify {
+            background: themed('primary');
+        }
+    }
+
+    > i {
+        margin-right: 2px;
+    }
+}
+
+.p-tb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.p-tb-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.p-tb-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-l-30 {
+    padding-left: 30px;
+}
+
+.p-tb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-tb-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-t-15 {
+    padding-top: 15px;
+}
+.p-r-15 {
+    padding-right: 15px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-l-15 {
+    padding-left: 15px;
+}
+
+.p-l-0 {
+    padding-left: 0;
+}
+
+.p-r-0 {
+    padding-right: 0;
+}
+
+.m-t-40 {
+    margin-top: 40px;
+}
+
+.m-t-35 {
+    margin-top: 35px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-t-0 {
+    margin-top: 0;
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-l--15 {
+    margin-left: -15px;
+}
+
+.m-r--15 {
+    margin-right: -15px;
+}
+
+.bg-black {
+    @include themify {
+        background: themed('black');
+    }
+}
+
+.bg-black-lite {
+    @include themify {
+        background: themed('black-lite');
+    }
+}
+
+.bg-black-dark {
+    @include themify {
+        background: themed('black-dark');
+    }
+}
+
+.bg-white {
+    background: #ffffff;
+}
+
+.bg-gray {
+    background: #f1f1f1;
+}
+
+.bg-green {
+    background: rgba(55, 188, 155, 0.9);
+}
+
+.bg-red {
+    background: rgba(255, 51, 102, .9);
+}
+
+.display-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.center {
+    float: none;
+    margin: auto;
+}
+
+.color-primary {
+    @include themify {
+        color: themed('primary');
+    }
+}
+
+.color-white {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    @include themify {
+        color: themed('white');
+    }
+}
+
+.color-black {
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+
+    @include themify {
+        color: themed('black');
+    }
+}
+
+.color-black-lite {
+    @include themify {
+        color: themed('black-lite');
+    }
+}
+
+.color-black-dark {
+    @include themify {
+        color: themed('black-dark');
+    }
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.separator {
+    .slick-active {
+        .single-ebook,
+        .ebook-card {
+            &:before {
+                position: absolute;
+                content: "";
+                left: -16px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+
+                @include themify {
+                    background: themed('gray-lite');
+                }
+            }
+        }
+    }
+
+    .ebook-card {
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+
+            @include themify {
+                background: themed('gray-lite');
+            }
+        }
+    }
+}
+
+.ebook-rating  {
+    display: flex;
+
+    i {
+        font-size: 18px;
+        margin: 2px 3px 0 0;
+
+        @include themify {
+            color: themed('default');
+        }
+    }
+}
+
+.rated {
+    @include themify {
+        color: themed('yellow') !important;
+    }
+}
+
+
+.section-wrapper {
+    margin-top: 50px;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 8px;
+    display: table;
+    margin: 0 auto 30px;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 34px;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        @include themify {
+            background: themed('primary');
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include themify {
+            background: themed('primary');
+        }
+    }
+}
+
+.section-header {
+    @include themify {
+        border-top: 1px solid themed('default');
+    }
+
+    h3 {
+        margin-bottom: -1px;
+        display: inline-block;
+        padding: 5px;
+
+        @include themify {
+            border-top: 2px solid themed('primary');
+            border-bottom: 2px solid themed('primary');
+        }
+    }
+}
+
+.error-message {
+    font-family: $font-rubik;
+    font-size: 14px;
+    display: block;
+    margin-top: 2px;
+
+    @include themify {
+        color: themed('danger');
+    }
+}
+
+.error {
+    @include themify {
+        border-color: themed('danger');
+    }
+}
+
+.form-wrapper {
+    display: table;
+    width: 450px;
+    margin: 30px auto 0;
+}
+
+@media screen and (max-width: 410px) {
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+.form-group {
+    select {
+       height: 44px;
+       width: 100%;
+       padding-left: 15px;
+    }
+}
+.form.form-overlay-layer {
+    @include themify {
+        background: themed('primary');
+    }
+
+    .top-overlay {
+        position: absolute;
+        left: -1px;
+        top: -1px;
+        right: -1px;
+        height: 80px;
+        background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+    }
+}
+.form {
+    position: relative;
+    margin: auto;
+    padding: 15px;
+    border-radius: $radius-default;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+
+    
+
+    .form-inner {
+        position: relative;
+        padding: 20px 15px 10px;
+        background: #ffffff;
+        border-radius: $radius-default;
+        margin-top: 20px;
+
+        @include themify {
+            border: 1px solid themed('gray-lite');
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+
+            @include themify {
+                color: themed('gray-dark');
+            }
+        }
+    }
+
+    .form-group {
+        position: relative;
+
+        .form-control {
+            padding-left: 36px;
+        }
+    }
+}
+
+.form.no-lp-form-control {
+    .form-group {
+        .form-control {
+            padding-left: 6px;
+        }
+    }
+}
+
+.btn-center {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-wrapper {
+    border-radius: $radius-default;
+    border: 1px solid #e9e9e9;
+}
+
+.box-header {
+    padding: 15px;
+    background: #f4f6f7;
+    margin-bottom: 15px;
+    border-radius: $radius-default $radius-default 0 0;
+
+    @include themify {
+        border-bottom: 1px solid themed('gray-lite');
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.pagination {
+    margin-bottom: 0;
+
+    > li {
+        float: left;
+        margin-left: -1px;
+        padding: 0;
+        transition: 200ms ease-in-out;
+
+        @include themify {
+            border: 1px solid themed('gray-lite');
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            @include themify {
+                background: themed('white-lite');
+            }
+        }
+
+        &:first-child {
+            margin-left: 0;
+            border-radius: $radius-default 0 0 $radius-default;
+
+            a {
+                border-radius: $radius-default 0 0 $radius-default;
+            }
+        }
+
+        &:last-child {
+            border-radius: 0 $radius-default $radius-default 0;
+
+            a {
+                border-radius: 0 $radius-default $radius-default 0;
+            }
+        }
+
+        &.disabled {
+            cursor: not-allowed !important;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        > a {
+            font-family: $font-rubik;
+            padding: 10px 15px;
+            border: none;
+            display: block;
+            background: transparent !important;
+            text-decoration: none;
+
+            @include themify {
+                color: themed('primary');
+            }
+
+            &:hover {
+                background: transparent;
+            }
+
+            &:hover, &:focus {
+                @include themify {
+                    color: themed('primary');
+                }
+            }
+        }
+
+        > span {
+            font-family: $font-rubik;
+            display: block;
+            padding: 10px 15px;
+            border: none;
+        }
+    }
+
+    > .active {
+        cursor: default !important;
+
+        @include themify {
+            border-color: themed('primary');
+            background: themed('primary');
+        }
+
+        &:hover {
+            @include themify {
+                background: themed('primary');
+            }
+        }
+
+        > a {
+            background: transparent !important;
+        }
+
+        > span {
+            background: transparent !important;
+        }
+    }
+}
+
+.image-holder {
+    position: relative;
+    border-radius: $radius-default;
+    overflow: hidden;
+    transition: 200ms ease-in-out;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /*max-height: 100%;
+        max-width: 100%;*/
+        transform: translate(-50%, -50%);
+    }
+}
+
+.image-placeholder {
+    position: relative;
+    vertical-align: bottom;
+    transition: 200ms ease-in-out;
+
+    > i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include themify {
+            color: themed('gray-lite');
+        }
+    }
+}
+
+.page-wrapper,
+.description {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 8px;
+    }
+
+    > ul,
+    > ol {
+        margin-left: 18px;
+
+        > li {
+            line-height: 26px;
+        }
+    }
+}
+
+.page-wrapper {
+    margin-top: 30px;
+}

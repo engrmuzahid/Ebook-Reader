@@ -1,0 +1,16 @@
+.permission-row {
+    .custom-radio {
+       margin-right: 10px;
+    }
+    .btn-sm {
+            font-size: 12px;
+            padding: 7px 15px;
+        }
+}
+@media screen and (max-width: 576px) {
+    .permission-row {
+        .form-check-inline {
+            display: inherit;
+        }
+    }
+}

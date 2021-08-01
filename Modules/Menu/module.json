@@ -1,0 +1,13 @@
+{
+    "name": "Menu",
+    "alias": "menu",
+    "description": "The Cynoinfotech Menu Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 90,
+    "providers": [
+        "Modules\\Menu\\Providers\\MenuServiceProvider",
+        "Modules\\Menu\\Providers\\RouteServiceProvider",
+        "Modules\\Menu\\Providers\\EventServiceProvider"
+    ]
+}

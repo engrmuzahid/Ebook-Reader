@@ -1,0 +1,566 @@
+.base-image {
+	position: relative;
+    border-radius: $radius-default;
+
+    .base-image-inner {
+		position: relative;
+		height: 320px;
+		overflow: hidden;
+        cursor: auto;
+        display:block;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		    height: auto;
+		    width: auto;
+		    max-width: 100%;
+		    max-height: 100%;
+            transform: translate(-50%, -50%);
+		}
+
+	}
+
+	.image-placeholder {
+		height: 320px;
+
+		> i {
+			font-size: 120px;
+        }
+	}
+}
+.social-share-btn {
+    margin-top: 10px;
+    border-top: 1px solid #e9e9e9;
+    text-align: center;
+    .social-links {
+        margin-left: 0px;
+
+        >li {
+            padding: 0;
+            margin: 0 5px;
+        }
+    }
+}
+.ebook-image {
+    .ebook-ribbon {
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        z-index: 2;
+
+        > li {
+            padding: 0;
+            display: block;
+
+            .ribbon {
+                font-family: $font-opensans;
+                font-weight: 300;
+                font-size: 14px;
+                position: relative;
+                display: block;
+                float: right;
+                color: #ffffff;
+                padding: 4px 5px 3px;
+                margin-bottom: 10px;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 100%;
+                    border-style: solid;
+                    border-width: 12px 5px 15px 6px;
+                }
+            }
+        }
+        
+        .ribbon.bg-green {
+            &:after {
+                @include themify {
+                    border-color: transparent themed('success') themed('success') transparent;
+                }
+            }
+        }
+
+        .ribbon.bg-red {
+            &:after {
+                @include themify {
+                    border-color: transparent themed('danger') themed('danger') transparent;
+                }
+            }
+        }
+        
+    }    
+}    
+.ebook-details {
+    /* min-height: 320px; */
+     margin-top: 10px;
+
+	.image-placeholder img 
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .default-placeholder i 
+    {
+        font-size: 50px;
+        margin-right: 10px;
+    }
+    
+    .ebook-view
+    {
+        margin-right:10px;
+    }
+	.ebook-rating {
+		float: left;
+		margin: 1px 10px 0 0;
+
+		> i {
+			margin-top: 2px;
+		}
+	}
+
+	.ebook-review {
+		font-size: 16px;
+		display: inline-block;
+		margin-right: 20px;
+
+		@include themify {
+			color: themed('black');
+		}
+	}
+    .ebook-user,.ebook-on,.ebook-incat,.ebook-publisher,.ebook-authors,.ebook-isbn-number {
+        margin: 0px 10px 5px 0px;
+    }
+    .ebook-incat
+    {
+        display: block;
+       
+    }
+	.ebook-brief {
+		margin-bottom: 15px;
+		color: #737373;
+	}
+    .ebook-details-footer {
+        margin-top: 10px;
+        padding-top: 5px;
+        border-top: 1px solid #e9e9e9;
+    }
+    
+    
+}
+
+.rtl {
+	.ebook-details {
+		.ebook-rating {
+			i {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+
+.ebook-tab {
+	margin-top: 30px;
+
+	.description {
+		padding: 30px 0 0;
+	}
+
+	.reviews {
+		padding-top: 30px;
+	}
+
+	.rating {
+		display: inline-block;
+	}
+
+	.user-review {
+		h3 {
+			margin-bottom: 20px;
+			padding-bottom: 30px;
+
+			@include themify {
+				border-bottom: 1px solid themed('gray-lite');
+			}
+		}
+
+		.pagination {
+			margin-top: 0;
+		}
+	}
+}
+
+.average-rating {
+	text-align: center;
+
+	.average {
+		height: 80px;
+        width: 80px;
+        display: table;
+        text-align: center;
+        margin-right: 15px;
+
+		@include themify {
+			border: 2px solid themed('white-lite');
+		}
+
+		span {
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 36px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	.ebook-rating {
+		margin-top: 10px;
+		justify-content: center;
+
+		i {
+			font-size: 24px;
+		}
+	}
+
+	.rate-of-average {
+		font-weight: 600;
+		display: block;
+		margin-top: 8px;
+	}
+
+	.reviews-total {
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+.rtl {
+	.average-rating {
+		.ebook-rating {
+			i {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+
+.rating {
+	.rating-bars-wrapper {
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.rating-bar {
+		display: table;
+		margin: 0 auto 15px;
+		overflow: auto;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.rating-label {
+			font-size: 17px;
+			float: left;
+			margin-right: 15px;
+			width: 60px;
+			text-align: left;
+
+			@include themify {
+				color: themed('black-dark');
+			}
+		}
+
+		.progress {
+			margin: 6px 0 0;
+			height: 13px;
+			width: 200px;
+			float: left;
+			border-radius: $radius-default;
+			box-shadow: none;
+
+			@include themify {
+				background: themed('white-dark');
+			}
+
+			.progress-bar {
+				@include themify {
+					background: themed('primary');
+				}
+			}
+		}
+
+		.rating-percentage {
+			font-size: 17px;
+			width: 50px;
+			float: left;
+			margin-left: 20px;
+			text-align: left;
+
+			@include themify {
+				color: themed('black-dark');
+			}
+		}
+	}
+}
+
+.comment {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+
+	@include themify {
+		border-bottom: 1px solid themed('gray-lite');
+	}
+
+	.comment-details {
+		.user-name {
+			font-weight: 500;
+		}
+
+		.time {
+			font-size: 15px;
+			font-style: italic;
+			display: table;
+			margin: 5px 0 7px;
+
+			@include themify {
+				color: themed('gray');
+			}
+		}
+
+		.user-text {
+			margin-top: 7px;
+		}
+	}
+}
+
+.review-form {
+	margin-top: 10px;
+
+	form > span {
+		display: inline-block;
+		margin-top: 9px;
+		font-size: 16px;
+
+		@include themify {
+			color: themed('black-dark');
+		}
+	}
+
+	.rating {
+		display: inline-block;
+		margin: 8px 0 5px;
+
+		> input {
+			display: none;
+		}
+
+		> label {
+			margin: 0;
+			padding-right: 4px;
+		 	float: right;
+		 	transition: 200ms ease-in-out;
+
+		 	@include themify {
+		 		color: themed('default');
+		 	}
+		}
+
+		> label:before {
+		  	font-family: FontAwesome;
+		  	font-size: 20px;
+		  	font-weight: normal;
+		  	display: inline-block;
+		  	content: "\f006";
+		  	cursor: pointer;
+		}
+
+		> input:checked ~ label {
+		    @include themify {
+		    	color: themed('yellow');
+		    }
+
+		    &:before {
+		      	content: "\f005";
+		    }
+		}
+
+		&:not(:checked) > label:hover {
+		    @include themify {
+		    	color: themed('yellow');
+		    }
+
+		    &:before {
+		      	content: "\f005";
+		    }
+
+		    ~ label {
+		      	@include themify {
+		      		color: themed('yellow');
+		      	}
+
+		      	&:before {
+			      	content: "\f005";
+			    }
+		    }
+		}
+
+		> {
+		    input:checked {
+		      + label:hover, ~ label:hover {
+		        opacity: 0.6;
+		      }
+		    }
+
+		    label:hover ~ input:checked ~ label, input:checked ~ label:hover ~ label {
+		      opacity: 0.6;
+		    }
+		}
+
+        & + .help-block {
+            margin-top: -10px;
+            margin-bottom: 15px;
+
+            @include themify {
+            	color: themed('danger');
+            }
+        }
+    }
+
+    .rating-required {
+        font-weight: 600;
+
+        @include themify {
+        	color: themed('danger');
+        }
+    }
+
+    .note {
+        margin-bottom: 0;
+
+        @include themify {
+        	color: themed('danger-hover');
+        }
+    }
+
+	.review-submit {
+		margin: 0 15px 15px;
+	}
+}
+
+@media screen and (max-width: $lg) {
+	.base-image {
+		.base-image-inner {
+			height: 245px;
+		}
+	}
+}
+
+@media screen and (max-width: $md) {
+	.base-image {
+		.base-image-inner,
+		.image-placeholder {
+			height: 260px;
+		}
+
+		.image-placeholder {
+			> i {
+				font-size: 100px;
+			}
+		}
+	}
+
+	.ebook-details {
+		min-height: 0;
+
+		.ebook-name {
+			font-size: 30px;
+			line-height: 36px;
+		}
+	}
+
+	.reviews {
+		.rating {
+			padding-right: 0;
+		}
+
+	}
+
+	.ebook-tab {
+		.review-form {
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $sm) {
+	.ebook-details-wrapper {
+		.row > .col-sm-5.col-xs-7 {
+			width: 320px;
+		}
+	}
+
+	.ebook-details {
+		margin-top: 30px;
+	}
+
+}
+
+@media screen and (max-width: $xs) {
+	.ebook-details {
+		.ebook-brief {
+			margin-bottom: 10px;
+		}
+	}
+	
+}
+
+@media screen and (max-width: 450px) {
+	.ebook-details {
+		.availability {
+			float: none !important;
+			margin: 0 0 10px 0;
+			clear: both;
+		}
+
+	}
+
+	.ebook-tab {
+		.comment {
+			.comment-details {
+				clear: both;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.ebook-details .add-to {
+		a:last-child {
+			margin-left: 0;
+			display: table;
+		}
+	}
+
+	.rating {
+		.rating-bar {
+			.progress {
+				width: 170px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.ebook-details-wrapper {
+		.row > .col-sm-5.col-xs-7 {
+			width: 100%;
+		}
+	}
+}

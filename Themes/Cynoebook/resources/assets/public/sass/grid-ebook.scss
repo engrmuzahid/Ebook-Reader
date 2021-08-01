@@ -1,0 +1,96 @@
+.grid-ebooks {
+    display: grid;
+
+    .ebook-card {
+        margin-top: 40px;
+        padding: 0 15px;
+
+        &:before {
+            height: 250px;
+        }
+    }
+}
+
+.recent-ebooks {
+    overflow: hidden;
+
+    .grid-ebooks {
+        grid-template-columns: repeat(4, calc(100% / 4));
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            .ebook-card:nth-child(-n+4) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            grid-template-columns: repeat(4, calc(100% / 4));
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            .ebook-card:nth-child(-n+4) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .recent-ebooks {
+        .grid-ebooks {
+            grid-template-columns: repeat(3, calc(100% / 3));
+        }
+    }
+}
+
+@media screen and (min-width: 681px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            .ebook-card:nth-child(-n+3) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            grid-template-columns: repeat(2, calc(100% / 2));
+        }
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            .ebook-card:nth-child(-n+2) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .recent-ebooks {
+        .grid-ebooks {
+            grid-template-columns: repeat(1, calc(100% / 1));
+
+            .ebook-card:first-child {
+                margin-top: 20px;
+            }
+        }
+    }
+}

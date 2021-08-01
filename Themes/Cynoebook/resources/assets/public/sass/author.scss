@@ -1,0 +1,117 @@
+.our-author {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    
+    .picture {
+        display: inline-block;
+        height: 130px;
+        width: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+        
+        &:before {
+            content: "";
+            width: 100%;
+            height: 0;
+            border-radius: 50%;
+            @include themify {
+                background-color: themed('primary');
+            }
+            position: absolute;
+            bottom: 135%;
+            right: 0;
+            left: 0;
+            opacity: 0.9;
+            transform: scale(3);
+            transition: all 0.3s linear 0s;
+
+        }
+        
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            @include themify {
+                background-color: themed('primary');
+            }
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+    }
+    
+    .total {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+    .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        @include themify {
+            background-color: themed('primary');
+        }
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+        
+        li {
+            display: inline-block;
+            
+        }
+        
+        li > a {
+            display: block;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+            &:hover {
+                
+                @include themify {
+                    color: themed('primary');
+                }
+                background-color: #f7f5ec; 
+            }
+        }
+        
+    }
+    
+    
+    &:hover {
+        .picture {
+            img {
+                box-shadow: 0 0 0 14px #f7f5ec;
+                transform: scale(0.7);
+            }
+            &:before {
+                height: 100%;
+            }
+        }
+        .social {
+            bottom: 0;
+        }
+    }
+  
+}

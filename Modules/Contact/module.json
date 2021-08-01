@@ -1,0 +1,11 @@
+{
+    "name": "Contact",
+    "alias": "contact",
+    "description": "The Cynoinfotech Contact Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Contact\\Providers\\RouteServiceProvider"
+    ]
+}

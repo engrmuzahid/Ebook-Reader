@@ -1,0 +1,54 @@
+.register-wrapper {
+    margin-top: 30px;
+
+    > .col-lg-6.col-md-7 {
+        float: none;
+        margin: auto;
+    }
+}
+
+.register-form {
+    .form-inner {
+        padding-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .checkbox {
+        display: inline-block;
+        margin: 10px 0 15px 15px;
+        transition: 200ms ease-in-out;
+
+        a {
+            @include themify {
+                color: themed('primary');
+            }
+
+            &:hover {
+                @include themify {
+                    color: themed('primary-hover');
+                }
+            }
+        }
+    }
+
+    .btn-register {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .register-form {
+        .checkbox {
+            margin-top: 0;
+        }
+
+        .btn-register {
+            display: table;
+            float: none !important;
+            margin-bottom: 5px;
+        }
+    }
+}

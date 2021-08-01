@@ -1,0 +1,54 @@
+.page-error {
+	position: relative;
+	margin: 200px 0 140px;
+
+	> span {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+        font-size: 250px;
+		z-index: -1;
+		white-space: nowrap;
+		transform: translate(-50%, -50%);
+
+		@include themify {
+		    color: themed('white-lite');
+		}
+
+		> span {
+			display: inline-block;
+			transform: rotateY(180deg);
+		}
+	}
+
+	.error-text {
+		> h4 {
+			margin-top: 2px;
+			color: #737373;
+		}
+	}
+}
+
+.rtl {
+	.page-error {
+		> span {
+			> span {
+				float: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $sm) {
+	.page-error {
+		margin: 150px 0 90px;
+	}
+}
+
+@media screen and (max-width: $xs) {
+	.page-error {
+		> span {
+			font-size: 170px;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+    "name": "ci/user",
+    "description": "The CynoInfotech User & Role Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "cartalyst/sentinel": "^4.0",
+        "laravel/socialite": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    }
+}

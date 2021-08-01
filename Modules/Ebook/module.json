@@ -1,0 +1,14 @@
+{
+    "name": "Ebook",
+    "alias": "ebook",
+    "description": "The Cynoinfotech eBook Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 90,
+    "providers": [
+        "Modules\\Ebook\\Providers\\EbookServiceProvider",
+        "Modules\\Ebook\\Providers\\EventServiceProvider",
+        "Modules\\Ebook\\Providers\\RouteServiceProvider"
+    ]
+    
+}

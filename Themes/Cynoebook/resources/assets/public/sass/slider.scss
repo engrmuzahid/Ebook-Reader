@@ -1,0 +1,160 @@
+.default {
+    .home-slider {
+        margin: -5px 0 15px -8px;
+    }
+}
+
+.slider_with_banners {
+    .home-slider {
+        margin: -5px 0 15px;
+    }
+}
+
+.home-slider {
+    overflow: hidden;
+    border-radius: $radius-default;
+
+    &.slick-dotted.slick-slider {
+        margin: 0;
+    }
+
+    .slick-slide {
+        float: left;
+    }
+
+    .slick-prev {
+        left: 15px;
+        right: auto;
+    }
+
+    .slick-next {
+        left: auto;
+        right: 15px;
+    }
+
+    .slick-active .slider-image {
+        transform: scale(1, 1);
+    }
+
+    .slick-dots {
+        bottom: 0;
+
+        button {
+            &:before {
+                @include themify {
+                    background: themed('black');
+                }
+            }
+        }
+    }
+
+    .slider-content {
+        height: 400px;
+    }
+}
+
+.slide {
+    display: none;
+    position: relative;
+    vertical-align: bottom;
+
+    &:first-child {
+        display: block;
+    }
+
+    .slick-initialized {
+        display: block;
+    }
+
+    .slider-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        transform: scale(1.25, 1.25);
+        transition: 500ms cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .caption {
+        font-family: $font-rubik;
+        text-align: left;
+    }
+
+    .caption-lg {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .caption-md {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 9px;
+    }
+
+    .caption-sm {
+        font-size: 24px;
+        line-height: 1;
+        margin-top: 10px;
+    }
+
+    .btn-slider {
+        padding: 10px 25px;
+        font-size: 15px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .default {
+        .home-slider {
+            margin-left: 0;
+        }
+    }
+
+    .slide {
+        .slider-content {
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .home-slider {
+        margin-bottom: 0;
+
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+
+    .slide {
+        .slider-content {
+            height: 300px;
+        }
+
+        .caption-lg {
+            font-size: 44px;
+        }
+
+        .caption-md {
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+
+        .caption-sm {
+            font-size: 18px;
+            margin-top: 7px;
+        }
+
+        .btn-slider {
+            margin-top: 12px;
+        }
+    }
+}

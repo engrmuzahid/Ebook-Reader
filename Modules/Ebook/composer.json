@@ -1,0 +1,19 @@
+{
+    "name": "ci/ebook",
+    "description": "The Cynoinfotech eBook Module.",
+    "authors": [
+        {
+            "name": "Cynoinfotech Team",
+            "email": "info@cynoinfotech.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravelista/comments": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Ebook\\": ""
+        }
+    }
+}

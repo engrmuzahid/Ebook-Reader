@@ -1,0 +1,5 @@
+@include('media::admin.image_picker.single', [
+    'title' => trans('ebook::ebooks.form.book_file'),
+    'inputName' => 'files[book_file]',
+    'file' => $ebook->bookfile,
+])

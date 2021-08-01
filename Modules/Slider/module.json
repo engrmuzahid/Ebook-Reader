@@ -1,0 +1,12 @@
+{
+    "name": "Slider",
+    "alias": "slider",
+    "description": "The Cynoinfotech Slider Module.",
+    "keywords": [],
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Slider\\Providers\\SliderServiceProvider",
+        "Modules\\Slider\\Providers\\RouteServiceProvider"
+    ]
+}
